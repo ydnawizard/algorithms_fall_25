@@ -1,0 +1,29 @@
+Ellis Weglewski
+
+
+  /$$$$$$            /$$                  /$$$$$$ 
+ /$$__  $$          |__/                 /$$$_  $$
+| $$  \ $$ /$$   /$$ /$$ /$$$$$$$$      | $$$$\ $$
+| $$  | $$| $$  | $$| $$|____ /$$/      | $$ $$ $$
+| $$  | $$| $$  | $$| $$   /$$$$/       | $$\ $$$$
+| $$/$$ $$| $$  | $$| $$  /$$__/        | $$ \ $$$
+|  $$$$$$/|  $$$$$$/| $$ /$$$$$$$$      |  $$$$$$/
+ \____ $$$ \______/ |__/|________/       \______/ 
+      \__/
+
+1.) No. I am going to guess that bubble sort is more efficient.
+
+2.) Insertion Sort
+
+3.) Stalin Sort
+
+4.) It doesnt exist because an algorithms time complexity cant be constant
+
+5.) 
+	a.) true
+	
+	b.) true
+
+	c.) false
+
+	d.) true
