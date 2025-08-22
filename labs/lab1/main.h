@@ -3,5 +3,5 @@
 #include <math.h>
 
 //Src
-#include "src/sort.c"
+#include "src/permute.c"
 #include "src/timer.c"

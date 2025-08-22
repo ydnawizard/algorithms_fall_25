@@ -21,12 +21,17 @@ int main(int arg_c,char * arg_v)
 {
 	int n;
 	int * integers;
-	n = 100;
+	n = 3;
+	int p = factorial(n);
+	printf("%d\n",p);
 	generate_integer_array(&integers,n);
 	for(int i = 0; i < n; i++)
 	{
-		printf("%d\n",i);
+		printf("%d\n",integers[i]);
 	}
-	n = return_array_size(&integers);
-	printf("%d",n);
+	permute(&integers,n);
+	for(int i = 0; i < n; i++)
+	{
+		printf("%d\n",integers[i]);
+	}
 }
