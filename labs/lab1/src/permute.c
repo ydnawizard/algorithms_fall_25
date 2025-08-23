@@ -1,5 +1,4 @@
 //Sorting Functions
-
 //Populates int pointer with first n integers
 void generate_integer_array(int ** integers,int n)
 {
@@ -21,21 +20,22 @@ int factorial(int n)
 	return factorial;
 }
 
-//Permutes int pointer once
 void permute(int ** integers,int n)
 {
-	int p;
-	int integers_prev[n];
-	for(int i = 0; i < n; i++)
+	int pivot;
+	int n_factorial;
+	//
+	n_factorial = factorial(n);
+	for(int i = 0; i < n_factorial; i++)
 	{
-		integers_prev[i] = (*integers)[i];
+		for(int i = 0; i < n; i++)
+		{
+			printf("%d",(*integers)[i]);
+		}
+		pivot = (*integers)[(i % (n - 1))];
+		(*integers)[(i % (n - 1))] = (*integers)[n-1];
+		(*integers)[n - 1] = pivot;
+		printf("\n");
 	}
-	for(int i = 0; i < n; i++)
-	{
-		(*integers)[i] = integers_prev[(i + 1) * 3 % n];
-	}
-}
 
-void permute_recursively(int ** integers,int n,int p)
-{
 }
