@@ -11,17 +11,19 @@ Written by: Ellis (Andy) Weglewski
 The task: Design and implement an algorithm for finding all permutations of the first n integers. 
 Follow the additional tasks (time measurements) and make sure to answer all questions at the end.
 
+Solution: Implemented Heap's algorithm.
+Solution Sourced From: https://www.geeksforgeeks.org/dsa/heaps-algorithm-for-generating-permutations/
+
+Usage: Compile and run with an int argument
 */
 
 #include "main.h"
 
-//The only things stored are an int that keeps track of how many permutations have been made (p)
-//and the array of ints that gets permuted (integers)
-int main(int arg_c,char * arg_v)
+int main(int arg_c,char * arg_v[])
 {
-	int n;
 	int * integers;
-	n = 4;
+	int n = atoi(arg_v[1]);
+	integers = malloc(n * sizeof(int));
 	generate_integer_array(&integers,n);
-	permute(&integers,n);
+	permute_all(&integers,n);
 }
