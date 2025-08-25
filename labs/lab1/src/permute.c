@@ -1,4 +1,6 @@
 //Sorting Functions
+
+
 //Populates int pointer with first n integers
 void generate_integer_array(int ** integers,int n)
 {
@@ -8,7 +10,7 @@ void generate_integer_array(int ** integers,int n)
 		(*integers)[i] = i + 1;
 	}
 }
-/*
+
 //Returns an int that is the factorial of input int n
 int factorial(int n)
 {
@@ -20,6 +22,8 @@ int factorial(int n)
 	return factorial;
 }
 
+//My original attempt 
+/*
 void permute_old(int ** integers,int n)
 {
 	int pivot;
@@ -62,6 +66,8 @@ void permute_old(int ** integers,int n)
 	}
 }
 */
+
+//Heaps algorithm implementation
 void permute(int ** integers,int cycle,int n)
 {
 	int pivot;
@@ -93,6 +99,7 @@ void permute(int ** integers,int cycle,int n)
 	}
 }
 
+//Main 
 void permute_all(int ** integers,int n)
 {
 	int cycle = n;
