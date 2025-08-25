@@ -93,12 +93,8 @@ void permute(int ** integers,int cycle,int n)
 	}
 }
 
-//I realized through working this out on paper that if you use the last integer as a 
-//pivot and swap it with i mod n (where n is the original integer) you generate every
-//possible permutation. Thats what this does. Basically making a ring of size n
 void permute_all(int ** integers,int n)
 {
-	int pivot;
 	int cycle = n;
 	permute(integers,cycle,n);
 }

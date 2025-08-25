@@ -25,5 +25,8 @@ int main(int arg_c,char * arg_v[])
 	int n = atoi(arg_v[1]);
 	integers = malloc(n * sizeof(int));
 	generate_integer_array(&integers,n);
+	clock_t run_time = clock();
 	permute_all(&integers,n);
+	run_time = clock() - run_time;
+	printf("%s %f %s\n","The program took",(float)run_time/CLOCKS_PER_SEC,"seconds to run");
 }
